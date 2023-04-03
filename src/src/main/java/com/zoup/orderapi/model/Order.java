@@ -9,7 +9,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -30,7 +29,6 @@ public class Order {
     private Long orderDateTime;
     private float netAmount;
     private float totalAmount;
-    @NotNull
     private Customer customerDetails;
     private List<Dish> dishes;
     private String orderStatus;
