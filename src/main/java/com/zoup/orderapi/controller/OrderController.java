@@ -73,7 +73,7 @@ public class OrderController {
 
     @GetMapping("/test")
     public ResponseEntity<String> snsCheck(){
-        SubscribeRequest subscribeRequest= new SubscribeRequest("arn:aws:sns:ap-south-1:199050684746:zoup-sms","sms","+919956552032");
+        SubscribeRequest subscribeRequest= new SubscribeRequest("arn:aws:sns:ap-south-1:196:zoup-version1","sms","+9219193399");
         amazonSNSClient.subscribe(subscribeRequest);
         return ResponseEntity.ok("ok");
 
@@ -117,7 +117,7 @@ public class OrderController {
         dishes.add(dish);
         dishes.add(dish1);
         return ResponseEntity.ok(Order.builder().orderId("123").orderStatus("placed").orderDateTime(23213123L)
-                .customerDetails(Customer.builder().name("salil").phoneNumber("9956552032").build())
+                .customerDetails(Customer.builder().name("abhi").phoneNumber("392929221").build())
                         .dishes(dishes)
                 .netAmount(231).restaurantId("121").restaurantName("restaurant12").vehicleDetails(VehicleDetails.builder().vehicleNo("pb12az2212").routeDetail("DLtoCHD").build()).build());
     }
