@@ -1,36 +1,13 @@
 # Zoup
 Food Ordering Rest API in Spring Boot, Mongo
-Introduction
 
-Framework and Database->
-The Restapi is developed using the Spring Boot framework, which is a popular and widely used framework for building web applications in Java.
-MongoDB is used as the database for this application, which is a NoSQL database that provides high scalability and flexibility.
+This REST API is developed using the widely used and popular Spring Boot framework and MongoDB database with async support. This allows for faster processing of requests, making the API more efficient and scalable. Additionally, the application can be easily containerized using Docker, enabling easy deployment to different environments.
 
-Async Support->
-To handle a large number of requests efficiently and improve the performance of the application, the Restapi is developed with async support. 
-This means that requests can be processed asynchronously, which allows multiple requests to be handled simultaneously, improving the overall response time.
+Spring profile is used to manage different environment configurations. This means that the application can be customized to work in different environments, such as development, testing, and production, without requiring significant changes to the codebase.
 
-Docker Containerization->
-The Restapi can be easily containerized using Docker, a containerization platform that enables developers to create, deploy, and 
-run applications in a containerized environment.This makes it easier to deploy the Restapi on different environments, making it more 
-scalable and easier to manage.
+The Restapi also integrates with AWS SES for mailing feature, which allows for the sending of emails to customers, such as order confirmations or password reset emails. This makes the application more user-friendly and adds to its overall functionality.
 
-Spring Profile->
-The Restapi also supports different environment configurations using Spring profile. This means that the application can be configured 
-to work in different environments such as development, testing, and production. This enables developers to test the application in 
-different environments before deploying it to production.
+Another feature of this Restapi is the ability to fetch data from Google Sheets. This feature provides an easy way for restaurants to catalogue their menu items, prices, and other relevant information, making it easier to manage their businesses.
 
-AWS SES Integration->
-The Restapi is integrated with AWS SES (Simple Email Service), a cloud-based email sending service provided by Amazon Web Services. 
-This feature allows the application to send emails to customers, such as order confirmations or password reset emails.
-
-Google Sheets Integration->
-The Restapi can also fetch data from Google Sheets, which is a cloud-based spreadsheet application provided by Google. This feature is useful for restaurants 
-as it allows them to easily manage and catalogue their menu items, prices, and other related information.
-
-
-Conclusion->
-The Restapi developed using Spring Boot with MongoDB and async support along with Docker and support for environment using Spring profile
-is an efficient and easy-to-use API. The integration with AWS SES and Google Sheets provides additional functionality that makes it more useful
-for restaurant purposes.
+Finally, the Restapi includes several CRUD (Create, Read, Update, Delete) endpoints that allow for the manipulation of restaurant data. These endpoints enable users to add, modify, and delete restaurants as well as fetch data about individual restaurants. Overall, this Restapi is an efficient, useful, and user-friendly API that offers several valuable features for restaurants.
 
